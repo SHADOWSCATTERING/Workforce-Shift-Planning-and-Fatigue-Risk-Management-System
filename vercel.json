@@ -7,7 +7,15 @@
       "use": "@vercel/python"
     },
     {
-      "src": "frontend/**",
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
       "use": "@vercel/static"
     }
   ],
@@ -17,12 +25,12 @@
       "dest": "app/app.py"
     },
     {
-      "src": "/(.*\\..*)",
-      "dest": "frontend/$1"
+      "src": "/(styles\\.css|script\\.js)",
+      "dest": "$1"
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/index.html"
+      "dest": "index.html"
     }
   ],
   "headers": [
