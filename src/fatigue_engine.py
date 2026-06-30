@@ -500,5 +500,6 @@ class FatigueEngine:
         return {
             "total_employees": len(employees),
             "risk_level_counts": summary,
+            "employee_risks": per_employee,
             "top_at_risk_employees": per_employee[:10],
         }
