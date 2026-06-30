@@ -1,0 +1,815 @@
+shift_id,employee_id,shift_date,shift_type,start_time,end_time,location,department
+S0001,E001,2026-06-01,Night,22:00,06:00,Site A,Production Line A
+S0002,E001,2026-06-02,Night,22:00,06:00,Site A,Production Line A
+S0003,E001,2026-06-03,Night,22:00,06:00,Main Plant,Production Line A
+S0004,E001,2026-06-04,Night,22:00,06:00,Warehouse 1,Production Line A
+S0005,E001,2026-06-07,Night,22:00,06:00,HQ,Production Line A
+S0006,E001,2026-06-08,Night,22:00,06:00,Warehouse 1,Production Line A
+S0007,E001,2026-06-09,Night,22:00,06:00,Main Plant,Production Line A
+S0008,E001,2026-06-10,Night,22:00,06:00,Site A,Production Line A
+S0009,E001,2026-06-11,Night,22:00,06:00,HQ,Production Line A
+S0010,E001,2026-06-14,Night,22:00,06:00,Main Plant,Production Line A
+S0011,E001,2026-06-16,Night,22:00,06:00,HQ,Production Line A
+S0012,E001,2026-06-17,Night,22:00,06:00,HQ,Production Line A
+S0013,E001,2026-06-18,Night,22:00,06:00,HQ,Production Line A
+S0014,E001,2026-06-21,Night,22:00,06:00,Site B,Production Line A
+S0015,E001,2026-06-22,Night,22:00,06:00,Site A,Production Line A
+S0016,E001,2026-06-23,Night,22:00,06:00,Site B,Production Line A
+S0017,E001,2026-06-24,Night,22:00,06:00,HQ,Production Line A
+S0018,E001,2026-06-25,Night,22:00,06:00,HQ,Production Line A
+S0019,E002,2026-06-01,Morning,06:00,14:00,HQ,Logistics
+S0020,E002,2026-06-02,Morning,06:00,14:00,Main Plant,Logistics
+S0021,E002,2026-06-05,Morning,06:00,14:00,Main Plant,Logistics
+S0022,E002,2026-06-06,Morning,06:00,14:00,Warehouse 1,Logistics
+S0023,E002,2026-06-07,Morning,06:00,14:00,Main Plant,Logistics
+S0024,E002,2026-06-08,Morning,06:00,14:00,Site A,Logistics
+S0025,E002,2026-06-12,Morning,06:00,14:00,HQ,Logistics
+S0026,E002,2026-06-13,Morning,06:00,14:00,Site A,Logistics
+S0027,E002,2026-06-14,Morning,06:00,14:00,HQ,Logistics
+S0028,E002,2026-06-15,Morning,06:00,14:00,Main Plant,Logistics
+S0029,E002,2026-06-16,Morning,06:00,14:00,Site B,Logistics
+S0030,E002,2026-06-19,Morning,06:00,14:00,Site B,Logistics
+S0031,E002,2026-06-20,Morning,06:00,14:00,HQ,Logistics
+S0032,E002,2026-06-21,Morning,06:00,14:00,HQ,Logistics
+S0033,E002,2026-06-22,Morning,06:00,14:00,HQ,Logistics
+S0034,E002,2026-06-26,Morning,06:00,14:00,Main Plant,Logistics
+S0035,E002,2026-06-27,Morning,06:00,14:00,Site A,Logistics
+S0036,E002,2026-06-28,Morning,06:00,14:00,Site B,Logistics
+S0037,E003,2026-06-01,Evening,14:00,22:00,HQ,Logistics
+S0038,E003,2026-06-02,Evening,14:00,22:00,Main Plant,Logistics
+S0039,E003,2026-06-03,Evening,14:00,22:00,Main Plant,Logistics
+S0040,E003,2026-06-04,Evening,14:00,22:00,Main Plant,Logistics
+S0041,E003,2026-06-05,Evening,14:00,22:00,Main Plant,Logistics
+S0042,E003,2026-06-08,Evening,14:00,22:00,Site A,Logistics
+S0043,E003,2026-06-09,Evening,14:00,22:00,Warehouse 1,Logistics
+S0044,E003,2026-06-10,Evening,14:00,22:00,Site A,Logistics
+S0045,E003,2026-06-11,Evening,14:00,22:00,Site B,Logistics
+S0046,E003,2026-06-12,Evening,14:00,22:00,Main Plant,Logistics
+S0047,E003,2026-06-15,Evening,14:00,22:00,Warehouse 1,Logistics
+S0048,E003,2026-06-16,Evening,14:00,22:00,Warehouse 1,Logistics
+S0049,E003,2026-06-17,Evening,14:00,22:00,Site A,Logistics
+S0050,E003,2026-06-18,Evening,14:00,22:00,Site B,Logistics
+S0051,E003,2026-06-19,Evening,14:00,22:00,Main Plant,Logistics
+S0052,E003,2026-06-22,Evening,14:00,22:00,Site B,Logistics
+S0053,E003,2026-06-23,Evening,14:00,22:00,Site A,Logistics
+S0054,E003,2026-06-24,Evening,14:00,22:00,Site A,Logistics
+S0055,E003,2026-06-25,Evening,14:00,22:00,Site B,Logistics
+S0056,E003,2026-06-26,Evening,14:00,22:00,Site A,Logistics
+S0057,E003,2026-06-13,Night,22:00,06:00,Main Plant,Logistics
+S0058,E003,2026-06-14,Night,22:00,06:00,HQ,Logistics
+S0059,E003,2026-06-15,Night,22:00,06:00,Warehouse 1,Logistics
+S0060,E003,2026-06-16,Night,22:00,06:00,HQ,Logistics
+S0061,E003,2026-06-17,Night,22:00,06:00,Site B,Logistics
+S0062,E004,2026-06-02,Day,09:00,17:00,Site B,Production Line B
+S0063,E004,2026-06-03,Day,09:00,17:00,Site A,Production Line B
+S0064,E004,2026-06-04,Day,09:00,17:00,Main Plant,Production Line B
+S0065,E004,2026-06-05,Day,09:00,17:00,Warehouse 1,Production Line B
+S0066,E004,2026-06-06,Day,09:00,17:00,Site B,Production Line B
+S0067,E004,2026-06-09,Day,09:00,17:00,Site A,Production Line B
+S0068,E004,2026-06-10,Day,09:00,17:00,Site A,Production Line B
+S0069,E004,2026-06-11,Day,09:00,17:00,Site B,Production Line B
+S0070,E004,2026-06-12,Day,09:00,17:00,Warehouse 1,Production Line B
+S0071,E004,2026-06-13,Day,09:00,17:00,Site B,Production Line B
+S0072,E004,2026-06-16,Day,09:00,17:00,Site B,Production Line B
+S0073,E004,2026-06-17,Day,09:00,17:00,Main Plant,Production Line B
+S0074,E004,2026-06-18,Day,09:00,17:00,Main Plant,Production Line B
+S0075,E004,2026-06-19,Day,09:00,17:00,HQ,Production Line B
+S0076,E004,2026-06-20,Day,09:00,17:00,HQ,Production Line B
+S0077,E004,2026-06-23,Day,09:00,17:00,Site A,Production Line B
+S0078,E004,2026-06-24,Day,09:00,17:00,Main Plant,Production Line B
+S0079,E004,2026-06-25,Day,09:00,17:00,Main Plant,Production Line B
+S0080,E004,2026-06-27,Day,09:00,17:00,Main Plant,Production Line B
+S0081,E005,2026-06-01,Evening,14:00,22:00,HQ,Production Line B
+S0082,E005,2026-06-02,Evening,14:00,22:00,HQ,Production Line B
+S0083,E005,2026-06-05,Evening,14:00,22:00,Site A,Production Line B
+S0084,E005,2026-06-06,Evening,14:00,22:00,Site A,Production Line B
+S0085,E005,2026-06-07,Evening,14:00,22:00,HQ,Production Line B
+S0086,E005,2026-06-08,Evening,14:00,22:00,Site B,Production Line B
+S0087,E005,2026-06-09,Evening,14:00,22:00,Site A,Production Line B
+S0088,E005,2026-06-12,Evening,14:00,22:00,Main Plant,Production Line B
+S0089,E005,2026-06-13,Evening,14:00,22:00,Site A,Production Line B
+S0090,E005,2026-06-14,Evening,14:00,22:00,Main Plant,Production Line B
+S0091,E005,2026-06-15,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0092,E005,2026-06-16,Evening,14:00,22:00,Main Plant,Production Line B
+S0093,E005,2026-06-19,Evening,14:00,22:00,Site B,Production Line B
+S0094,E005,2026-06-20,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0095,E005,2026-06-21,Evening,14:00,22:00,Site B,Production Line B
+S0096,E005,2026-06-22,Evening,14:00,22:00,Main Plant,Production Line B
+S0097,E005,2026-06-23,Evening,14:00,22:00,Site A,Production Line B
+S0098,E005,2026-06-26,Evening,14:00,22:00,Site B,Production Line B
+S0099,E005,2026-06-27,Evening,14:00,22:00,HQ,Production Line B
+S0100,E005,2026-06-28,Evening,14:00,22:00,Main Plant,Production Line B
+S0101,E006,2026-06-01,Night,22:00,06:00,Site B,Production Line B
+S0102,E006,2026-06-02,Night,22:00,06:00,Site B,Production Line B
+S0103,E006,2026-06-05,Night,22:00,06:00,Main Plant,Production Line B
+S0104,E006,2026-06-06,Night,22:00,06:00,HQ,Production Line B
+S0105,E006,2026-06-07,Night,22:00,06:00,Site B,Production Line B
+S0106,E006,2026-06-08,Night,22:00,06:00,Site B,Production Line B
+S0107,E006,2026-06-09,Night,22:00,06:00,Site B,Production Line B
+S0108,E006,2026-06-12,Night,22:00,06:00,Site B,Production Line B
+S0109,E006,2026-06-13,Night,22:00,06:00,HQ,Production Line B
+S0110,E006,2026-06-14,Night,22:00,06:00,Site A,Production Line B
+S0111,E006,2026-06-15,Night,22:00,06:00,HQ,Production Line B
+S0112,E006,2026-06-16,Night,22:00,06:00,Warehouse 1,Production Line B
+S0113,E006,2026-06-19,Night,22:00,06:00,Site B,Production Line B
+S0114,E006,2026-06-20,Night,22:00,06:00,Site A,Production Line B
+S0115,E006,2026-06-21,Night,22:00,06:00,Site A,Production Line B
+S0116,E006,2026-06-22,Night,22:00,06:00,Site B,Production Line B
+S0117,E006,2026-06-23,Night,22:00,06:00,HQ,Production Line B
+S0118,E006,2026-06-26,Night,22:00,06:00,HQ,Production Line B
+S0119,E006,2026-06-27,Night,22:00,06:00,Site A,Production Line B
+S0120,E006,2026-06-28,Night,22:00,06:00,Warehouse 1,Production Line B
+S0121,E006,2026-06-13,Evening,16:00,23:30,HQ,Production Line B
+S0122,E006,2026-06-14,Morning,06:00,14:00,HQ,Production Line B
+S0123,E006,2026-06-15,Evening,16:00,23:30,HQ,Production Line B
+S0124,E006,2026-06-16,Morning,06:00,14:00,Main Plant,Production Line B
+S0125,E006,2026-06-17,Evening,16:00,23:30,Warehouse 1,Production Line B
+S0126,E006,2026-06-18,Morning,06:00,14:00,HQ,Production Line B
+S0127,E007,2026-06-02,Night,22:00,06:00,Warehouse 1,ICU
+S0128,E007,2026-06-03,Night,22:00,06:00,Warehouse 1,ICU
+S0129,E007,2026-06-04,Night,22:00,06:00,Site B,ICU
+S0130,E007,2026-06-05,Night,22:00,06:00,Main Plant,ICU
+S0131,E007,2026-06-06,Night,22:00,06:00,HQ,ICU
+S0132,E007,2026-06-09,Night,22:00,06:00,Site B,ICU
+S0133,E007,2026-06-10,Night,22:00,06:00,Site A,ICU
+S0134,E007,2026-06-11,Night,22:00,06:00,Site B,ICU
+S0135,E007,2026-06-12,Night,22:00,06:00,Main Plant,ICU
+S0136,E007,2026-06-13,Night,22:00,06:00,Site A,ICU
+S0137,E007,2026-06-16,Night,22:00,06:00,Site B,ICU
+S0138,E007,2026-06-17,Night,22:00,06:00,Site B,ICU
+S0139,E007,2026-06-18,Night,22:00,06:00,Site A,ICU
+S0140,E007,2026-06-19,Night,22:00,06:00,Main Plant,ICU
+S0141,E007,2026-06-20,Night,22:00,06:00,Warehouse 1,ICU
+S0142,E007,2026-06-23,Night,22:00,06:00,Warehouse 1,ICU
+S0143,E007,2026-06-24,Night,22:00,06:00,HQ,ICU
+S0144,E007,2026-06-25,Night,22:00,06:00,Site A,ICU
+S0145,E007,2026-06-26,Night,22:00,06:00,HQ,ICU
+S0146,E007,2026-06-27,Night,22:00,06:00,Site A,ICU
+S0147,E008,2026-06-01,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0148,E008,2026-06-02,Evening,14:00,22:00,HQ,Production Line A
+S0149,E008,2026-06-03,Evening,14:00,22:00,Site B,Production Line A
+S0150,E008,2026-06-06,Evening,14:00,22:00,Main Plant,Production Line A
+S0151,E008,2026-06-07,Evening,14:00,22:00,Site A,Production Line A
+S0152,E008,2026-06-08,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0153,E008,2026-06-09,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0154,E008,2026-06-10,Evening,14:00,22:00,HQ,Production Line A
+S0155,E008,2026-06-13,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0156,E008,2026-06-14,Evening,14:00,22:00,Site A,Production Line A
+S0157,E008,2026-06-15,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0158,E008,2026-06-16,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0159,E008,2026-06-17,Evening,14:00,22:00,Main Plant,Production Line A
+S0160,E008,2026-06-20,Evening,14:00,22:00,Site B,Production Line A
+S0161,E008,2026-06-21,Evening,14:00,22:00,Main Plant,Production Line A
+S0162,E008,2026-06-22,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0163,E008,2026-06-23,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0164,E008,2026-06-24,Evening,14:00,22:00,Site A,Production Line A
+S0165,E008,2026-06-27,Evening,14:00,22:00,HQ,Production Line A
+S0166,E009,2026-06-01,Evening,14:00,22:00,Site A,Support Desk
+S0167,E009,2026-06-02,Evening,14:00,22:00,Site B,Support Desk
+S0168,E009,2026-06-03,Evening,14:00,22:00,Site A,Support Desk
+S0169,E009,2026-06-04,Evening,14:00,22:00,Site B,Support Desk
+S0170,E009,2026-06-07,Evening,14:00,22:00,Site A,Support Desk
+S0171,E009,2026-06-08,Evening,14:00,22:00,Site B,Support Desk
+S0172,E009,2026-06-09,Evening,14:00,22:00,Main Plant,Support Desk
+S0173,E009,2026-06-10,Evening,14:00,22:00,Site B,Support Desk
+S0174,E009,2026-06-11,Evening,14:00,22:00,Site A,Support Desk
+S0175,E009,2026-06-14,Evening,14:00,22:00,Site B,Support Desk
+S0176,E009,2026-06-15,Evening,14:00,22:00,Site A,Support Desk
+S0177,E009,2026-06-16,Evening,14:00,22:00,Main Plant,Support Desk
+S0178,E009,2026-06-17,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0179,E009,2026-06-18,Evening,14:00,22:00,Site B,Support Desk
+S0180,E009,2026-06-21,Evening,14:00,22:00,Site B,Support Desk
+S0181,E009,2026-06-22,Evening,14:00,22:00,Main Plant,Support Desk
+S0182,E009,2026-06-23,Evening,14:00,22:00,HQ,Support Desk
+S0183,E009,2026-06-24,Evening,14:00,22:00,HQ,Support Desk
+S0184,E009,2026-06-25,Evening,14:00,22:00,Main Plant,Support Desk
+S0185,E009,2026-06-28,Evening,14:00,22:00,Main Plant,Support Desk
+S0186,E010,2026-06-01,Morning,06:00,14:00,Site A,General Ward
+S0187,E010,2026-06-04,Morning,06:00,14:00,Warehouse 1,General Ward
+S0188,E010,2026-06-05,Morning,06:00,14:00,Main Plant,General Ward
+S0189,E010,2026-06-06,Morning,06:00,14:00,Warehouse 1,General Ward
+S0190,E010,2026-06-07,Morning,06:00,14:00,Warehouse 1,General Ward
+S0191,E010,2026-06-08,Morning,06:00,14:00,HQ,General Ward
+S0192,E010,2026-06-11,Morning,06:00,14:00,Main Plant,General Ward
+S0193,E010,2026-06-12,Morning,06:00,14:00,HQ,General Ward
+S0194,E010,2026-06-13,Morning,06:00,14:00,Warehouse 1,General Ward
+S0195,E010,2026-06-14,Morning,06:00,14:00,HQ,General Ward
+S0196,E010,2026-06-15,Morning,06:00,14:00,Site B,General Ward
+S0197,E010,2026-06-18,Morning,06:00,14:00,Site A,General Ward
+S0198,E010,2026-06-19,Morning,06:00,14:00,Warehouse 1,General Ward
+S0199,E010,2026-06-20,Morning,06:00,14:00,Warehouse 1,General Ward
+S0200,E010,2026-06-21,Morning,06:00,14:00,Warehouse 1,General Ward
+S0201,E010,2026-06-22,Morning,06:00,14:00,Warehouse 1,General Ward
+S0202,E010,2026-06-25,Morning,06:00,14:00,Site B,General Ward
+S0203,E010,2026-06-26,Morning,06:00,14:00,Main Plant,General Ward
+S0204,E010,2026-06-27,Morning,06:00,14:00,Main Plant,General Ward
+S0205,E010,2026-06-28,Morning,06:00,14:00,HQ,General Ward
+S0206,E010,2026-06-13,Night,22:00,06:00,Main Plant,General Ward
+S0207,E010,2026-06-14,Night,22:00,06:00,HQ,General Ward
+S0208,E010,2026-06-15,Night,22:00,06:00,Site A,General Ward
+S0209,E010,2026-06-16,Night,22:00,06:00,HQ,General Ward
+S0210,E010,2026-06-17,Night,22:00,06:00,Site B,General Ward
+S0211,E011,2026-06-01,Morning,06:00,14:00,Warehouse 1,Production Line A
+S0212,E011,2026-06-02,Morning,06:00,14:00,Site B,Production Line A
+S0213,E011,2026-06-03,Morning,06:00,14:00,Warehouse 1,Production Line A
+S0214,E011,2026-06-04,Morning,06:00,14:00,Site A,Production Line A
+S0215,E011,2026-06-07,Morning,06:00,14:00,Site B,Production Line A
+S0216,E011,2026-06-08,Morning,06:00,14:00,Site B,Production Line A
+S0217,E011,2026-06-09,Morning,06:00,14:00,HQ,Production Line A
+S0218,E011,2026-06-10,Morning,06:00,14:00,HQ,Production Line A
+S0219,E011,2026-06-11,Morning,06:00,14:00,Warehouse 1,Production Line A
+S0220,E011,2026-06-14,Morning,06:00,14:00,HQ,Production Line A
+S0221,E011,2026-06-15,Morning,06:00,14:00,Warehouse 1,Production Line A
+S0222,E011,2026-06-16,Morning,06:00,14:00,Main Plant,Production Line A
+S0223,E011,2026-06-17,Morning,06:00,14:00,Site B,Production Line A
+S0224,E011,2026-06-18,Morning,06:00,14:00,HQ,Production Line A
+S0225,E011,2026-06-21,Morning,06:00,14:00,Site B,Production Line A
+S0226,E011,2026-06-22,Morning,06:00,14:00,Warehouse 1,Production Line A
+S0227,E011,2026-06-23,Morning,06:00,14:00,HQ,Production Line A
+S0228,E011,2026-06-24,Morning,06:00,14:00,HQ,Production Line A
+S0229,E011,2026-06-25,Morning,06:00,14:00,Site A,Production Line A
+S0230,E011,2026-06-28,Morning,06:00,14:00,Main Plant,Production Line A
+S0231,E012,2026-06-01,Day,09:00,17:00,Site A,General Ward
+S0232,E012,2026-06-02,Day,09:00,17:00,Site B,General Ward
+S0233,E012,2026-06-03,Day,09:00,17:00,Site A,General Ward
+S0234,E012,2026-06-06,Day,09:00,17:00,Site B,General Ward
+S0235,E012,2026-06-07,Day,09:00,17:00,Warehouse 1,General Ward
+S0236,E012,2026-06-08,Day,09:00,17:00,Site A,General Ward
+S0237,E012,2026-06-09,Day,09:00,17:00,Warehouse 1,General Ward
+S0238,E012,2026-06-10,Day,09:00,17:00,Main Plant,General Ward
+S0239,E012,2026-06-13,Day,09:00,17:00,Site A,General Ward
+S0240,E012,2026-06-14,Day,09:00,17:00,Warehouse 1,General Ward
+S0241,E012,2026-06-15,Day,09:00,17:00,Site A,General Ward
+S0242,E012,2026-06-16,Day,09:00,17:00,Site A,General Ward
+S0243,E012,2026-06-17,Day,09:00,17:00,Site A,General Ward
+S0244,E012,2026-06-20,Day,09:00,17:00,HQ,General Ward
+S0245,E012,2026-06-21,Day,09:00,17:00,Site A,General Ward
+S0246,E012,2026-06-22,Day,09:00,17:00,Site A,General Ward
+S0247,E012,2026-06-23,Day,09:00,17:00,Warehouse 1,General Ward
+S0248,E012,2026-06-24,Day,09:00,17:00,HQ,General Ward
+S0249,E012,2026-06-27,Day,09:00,17:00,HQ,General Ward
+S0250,E012,2026-06-28,Day,09:00,17:00,Warehouse 1,General Ward
+S0251,E013,2026-06-02,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0252,E013,2026-06-03,Evening,14:00,22:00,HQ,Support Desk
+S0253,E013,2026-06-04,Evening,14:00,22:00,Site A,Support Desk
+S0254,E013,2026-06-05,Evening,14:00,22:00,Site B,Support Desk
+S0255,E013,2026-06-06,Evening,14:00,22:00,Main Plant,Support Desk
+S0256,E013,2026-06-09,Evening,14:00,22:00,Site B,Support Desk
+S0257,E013,2026-06-10,Evening,14:00,22:00,HQ,Support Desk
+S0258,E013,2026-06-11,Evening,14:00,22:00,Site A,Support Desk
+S0259,E013,2026-06-12,Evening,14:00,22:00,HQ,Support Desk
+S0260,E013,2026-06-13,Evening,14:00,22:00,Site A,Support Desk
+S0261,E013,2026-06-16,Evening,14:00,22:00,Main Plant,Support Desk
+S0262,E013,2026-06-17,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0263,E013,2026-06-18,Evening,14:00,22:00,Site B,Support Desk
+S0264,E013,2026-06-19,Evening,14:00,22:00,HQ,Support Desk
+S0265,E013,2026-06-20,Evening,14:00,22:00,Site B,Support Desk
+S0266,E013,2026-06-23,Evening,14:00,22:00,HQ,Support Desk
+S0267,E013,2026-06-24,Evening,14:00,22:00,Site B,Support Desk
+S0268,E013,2026-06-25,Evening,14:00,22:00,Site B,Support Desk
+S0269,E013,2026-06-26,Evening,14:00,22:00,Site B,Support Desk
+S0270,E013,2026-06-27,Evening,14:00,22:00,HQ,Support Desk
+S0271,E014,2026-06-01,Evening,14:00,22:00,Main Plant,Facility Security
+S0272,E014,2026-06-02,Evening,14:00,22:00,Main Plant,Facility Security
+S0273,E014,2026-06-05,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0274,E014,2026-06-06,Evening,14:00,22:00,HQ,Facility Security
+S0275,E014,2026-06-08,Evening,14:00,22:00,Main Plant,Facility Security
+S0276,E014,2026-06-09,Evening,14:00,22:00,Site A,Facility Security
+S0277,E014,2026-06-12,Evening,14:00,22:00,HQ,Facility Security
+S0278,E014,2026-06-13,Evening,14:00,22:00,Site A,Facility Security
+S0279,E014,2026-06-14,Evening,14:00,22:00,Main Plant,Facility Security
+S0280,E014,2026-06-15,Evening,14:00,22:00,Site B,Facility Security
+S0281,E014,2026-06-16,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0282,E014,2026-06-19,Evening,14:00,22:00,Site B,Facility Security
+S0283,E014,2026-06-20,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0284,E014,2026-06-21,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0285,E014,2026-06-22,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0286,E014,2026-06-23,Evening,14:00,22:00,Main Plant,Facility Security
+S0287,E014,2026-06-26,Evening,14:00,22:00,Site A,Facility Security
+S0288,E014,2026-06-27,Evening,14:00,22:00,Main Plant,Facility Security
+S0289,E014,2026-06-28,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0290,E015,2026-06-03,Evening,14:00,22:00,HQ,Logistics
+S0291,E015,2026-06-04,Evening,14:00,22:00,Site A,Logistics
+S0292,E015,2026-06-05,Evening,14:00,22:00,Main Plant,Logistics
+S0293,E015,2026-06-06,Evening,14:00,22:00,Warehouse 1,Logistics
+S0294,E015,2026-06-07,Evening,14:00,22:00,Site A,Logistics
+S0295,E015,2026-06-10,Evening,14:00,22:00,HQ,Logistics
+S0296,E015,2026-06-11,Evening,14:00,22:00,Site A,Logistics
+S0297,E015,2026-06-12,Evening,14:00,22:00,Main Plant,Logistics
+S0298,E015,2026-06-13,Evening,14:00,22:00,Warehouse 1,Logistics
+S0299,E015,2026-06-14,Evening,14:00,22:00,Site A,Logistics
+S0300,E015,2026-06-17,Evening,14:00,22:00,HQ,Logistics
+S0301,E015,2026-06-18,Evening,14:00,22:00,Main Plant,Logistics
+S0302,E015,2026-06-19,Evening,14:00,22:00,Warehouse 1,Logistics
+S0303,E015,2026-06-20,Evening,14:00,22:00,HQ,Logistics
+S0304,E015,2026-06-21,Evening,14:00,22:00,Site B,Logistics
+S0305,E015,2026-06-24,Evening,14:00,22:00,Site A,Logistics
+S0306,E015,2026-06-25,Evening,14:00,22:00,Site A,Logistics
+S0307,E015,2026-06-26,Evening,14:00,22:00,Site A,Logistics
+S0308,E015,2026-06-27,Evening,14:00,22:00,Site A,Logistics
+S0309,E015,2026-06-28,Evening,14:00,22:00,Site B,Logistics
+S0310,E015,2026-06-13,Day,09:00,17:00,Warehouse 1,Logistics
+S0311,E015,2026-06-14,Day,09:00,17:00,Main Plant,Logistics
+S0312,E015,2026-06-15,Day,09:00,17:00,HQ,Logistics
+S0313,E015,2026-06-16,Day,09:00,17:00,Main Plant,Logistics
+S0314,E015,2026-06-17,Day,09:00,17:00,Warehouse 1,Logistics
+S0315,E015,2026-06-18,Day,09:00,17:00,Warehouse 1,Logistics
+S0316,E015,2026-06-19,Day,09:00,17:00,Warehouse 1,Logistics
+S0317,E015,2026-06-20,Day,09:00,17:00,Site B,Logistics
+S0318,E015,2026-06-21,Day,09:00,17:00,Warehouse 1,Logistics
+S0319,E016,2026-06-01,Day,09:00,17:00,HQ,Production Line B
+S0320,E016,2026-06-02,Day,09:00,17:00,Site B,Production Line B
+S0321,E016,2026-06-05,Day,09:00,17:00,Main Plant,Production Line B
+S0322,E016,2026-06-06,Day,09:00,17:00,Warehouse 1,Production Line B
+S0323,E016,2026-06-07,Day,09:00,17:00,HQ,Production Line B
+S0324,E016,2026-06-08,Day,09:00,17:00,Site A,Production Line B
+S0325,E016,2026-06-09,Day,09:00,17:00,Main Plant,Production Line B
+S0326,E016,2026-06-12,Day,09:00,17:00,HQ,Production Line B
+S0327,E016,2026-06-13,Day,09:00,17:00,Warehouse 1,Production Line B
+S0328,E016,2026-06-14,Day,09:00,17:00,Warehouse 1,Production Line B
+S0329,E016,2026-06-15,Day,09:00,17:00,Main Plant,Production Line B
+S0330,E016,2026-06-16,Day,09:00,17:00,HQ,Production Line B
+S0331,E016,2026-06-19,Day,09:00,17:00,Main Plant,Production Line B
+S0332,E016,2026-06-20,Day,09:00,17:00,Site B,Production Line B
+S0333,E016,2026-06-21,Day,09:00,17:00,Site B,Production Line B
+S0334,E016,2026-06-22,Day,09:00,17:00,Warehouse 1,Production Line B
+S0335,E016,2026-06-26,Day,09:00,17:00,Warehouse 1,Production Line B
+S0336,E016,2026-06-27,Day,09:00,17:00,Site B,Production Line B
+S0337,E016,2026-06-28,Day,09:00,17:00,Site A,Production Line B
+S0338,E017,2026-06-01,Day,09:00,17:00,Main Plant,Support Desk
+S0339,E017,2026-06-04,Day,09:00,17:00,Warehouse 1,Support Desk
+S0340,E017,2026-06-05,Day,09:00,17:00,Warehouse 1,Support Desk
+S0341,E017,2026-06-07,Day,09:00,17:00,Site B,Support Desk
+S0342,E017,2026-06-08,Day,09:00,17:00,Main Plant,Support Desk
+S0343,E017,2026-06-11,Day,09:00,17:00,Warehouse 1,Support Desk
+S0344,E017,2026-06-12,Day,09:00,17:00,Main Plant,Support Desk
+S0345,E017,2026-06-13,Day,09:00,17:00,HQ,Support Desk
+S0346,E017,2026-06-14,Day,09:00,17:00,Main Plant,Support Desk
+S0347,E017,2026-06-15,Day,09:00,17:00,Warehouse 1,Support Desk
+S0348,E017,2026-06-18,Day,09:00,17:00,Site A,Support Desk
+S0349,E017,2026-06-19,Day,09:00,17:00,Site B,Support Desk
+S0350,E017,2026-06-20,Day,09:00,17:00,Main Plant,Support Desk
+S0351,E017,2026-06-21,Day,09:00,17:00,Site A,Support Desk
+S0352,E017,2026-06-22,Day,09:00,17:00,Site A,Support Desk
+S0353,E017,2026-06-25,Day,09:00,17:00,Site A,Support Desk
+S0354,E017,2026-06-26,Day,09:00,17:00,Main Plant,Support Desk
+S0355,E017,2026-06-27,Day,09:00,17:00,Site A,Support Desk
+S0356,E017,2026-06-28,Day,09:00,17:00,Site A,Support Desk
+S0357,E018,2026-06-01,Evening,14:00,22:00,Site B,General Ward
+S0358,E018,2026-06-02,Evening,14:00,22:00,Warehouse 1,General Ward
+S0359,E018,2026-06-03,Evening,14:00,22:00,Site B,General Ward
+S0360,E018,2026-06-06,Evening,14:00,22:00,Site A,General Ward
+S0361,E018,2026-06-07,Evening,14:00,22:00,Warehouse 1,General Ward
+S0362,E018,2026-06-08,Evening,14:00,22:00,Site B,General Ward
+S0363,E018,2026-06-09,Evening,14:00,22:00,HQ,General Ward
+S0364,E018,2026-06-10,Evening,14:00,22:00,Warehouse 1,General Ward
+S0365,E018,2026-06-13,Evening,14:00,22:00,Warehouse 1,General Ward
+S0366,E018,2026-06-14,Evening,14:00,22:00,Site A,General Ward
+S0367,E018,2026-06-15,Evening,14:00,22:00,Warehouse 1,General Ward
+S0368,E018,2026-06-16,Evening,14:00,22:00,HQ,General Ward
+S0369,E018,2026-06-17,Evening,14:00,22:00,Warehouse 1,General Ward
+S0370,E018,2026-06-20,Evening,14:00,22:00,HQ,General Ward
+S0371,E018,2026-06-21,Evening,14:00,22:00,Warehouse 1,General Ward
+S0372,E018,2026-06-22,Evening,14:00,22:00,Warehouse 1,General Ward
+S0373,E018,2026-06-23,Evening,14:00,22:00,Site B,General Ward
+S0374,E018,2026-06-24,Evening,14:00,22:00,Warehouse 1,General Ward
+S0375,E018,2026-06-27,Evening,14:00,22:00,Warehouse 1,General Ward
+S0376,E018,2026-06-28,Evening,14:00,22:00,HQ,General Ward
+S0377,E019,2026-06-03,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0378,E019,2026-06-04,Evening,14:00,22:00,HQ,Support Desk
+S0379,E019,2026-06-05,Evening,14:00,22:00,Site A,Support Desk
+S0380,E019,2026-06-06,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0381,E019,2026-06-07,Evening,14:00,22:00,Main Plant,Support Desk
+S0382,E019,2026-06-10,Evening,14:00,22:00,Site B,Support Desk
+S0383,E019,2026-06-11,Evening,14:00,22:00,Main Plant,Support Desk
+S0384,E019,2026-06-12,Evening,14:00,22:00,Site B,Support Desk
+S0385,E019,2026-06-13,Evening,14:00,22:00,Site B,Support Desk
+S0386,E019,2026-06-14,Evening,14:00,22:00,Site A,Support Desk
+S0387,E019,2026-06-17,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0388,E019,2026-06-19,Evening,14:00,22:00,Site B,Support Desk
+S0389,E019,2026-06-20,Evening,14:00,22:00,Main Plant,Support Desk
+S0390,E019,2026-06-21,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0391,E019,2026-06-24,Evening,14:00,22:00,Site B,Support Desk
+S0392,E019,2026-06-25,Evening,14:00,22:00,Main Plant,Support Desk
+S0393,E019,2026-06-26,Evening,14:00,22:00,Main Plant,Support Desk
+S0394,E019,2026-06-27,Evening,14:00,22:00,Main Plant,Support Desk
+S0395,E019,2026-06-28,Evening,14:00,22:00,Warehouse 1,Support Desk
+S0396,E020,2026-06-03,Evening,14:00,22:00,Site A,Production Line B
+S0397,E020,2026-06-04,Evening,14:00,22:00,Site A,Production Line B
+S0398,E020,2026-06-05,Evening,14:00,22:00,Site B,Production Line B
+S0399,E020,2026-06-06,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0400,E020,2026-06-07,Evening,14:00,22:00,HQ,Production Line B
+S0401,E020,2026-06-10,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0402,E020,2026-06-11,Evening,14:00,22:00,HQ,Production Line B
+S0403,E020,2026-06-12,Evening,14:00,22:00,Main Plant,Production Line B
+S0404,E020,2026-06-13,Evening,14:00,22:00,Main Plant,Production Line B
+S0405,E020,2026-06-14,Evening,14:00,22:00,Main Plant,Production Line B
+S0406,E020,2026-06-17,Evening,14:00,22:00,Site B,Production Line B
+S0407,E020,2026-06-18,Evening,14:00,22:00,HQ,Production Line B
+S0408,E020,2026-06-19,Evening,14:00,22:00,HQ,Production Line B
+S0409,E020,2026-06-20,Evening,14:00,22:00,HQ,Production Line B
+S0410,E020,2026-06-21,Evening,14:00,22:00,Site A,Production Line B
+S0411,E020,2026-06-24,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0412,E020,2026-06-25,Evening,14:00,22:00,Main Plant,Production Line B
+S0413,E020,2026-06-26,Evening,14:00,22:00,Site A,Production Line B
+S0414,E020,2026-06-27,Evening,14:00,22:00,Site A,Production Line B
+S0415,E020,2026-06-28,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0416,E020,2026-06-13,Day,09:00,17:00,Site A,Production Line B
+S0417,E020,2026-06-14,Day,09:00,17:00,Site A,Production Line B
+S0418,E020,2026-06-15,Day,09:00,17:00,Site B,Production Line B
+S0419,E020,2026-06-16,Day,09:00,17:00,HQ,Production Line B
+S0420,E020,2026-06-17,Day,09:00,17:00,Site B,Production Line B
+S0421,E020,2026-06-18,Day,09:00,17:00,Warehouse 1,Production Line B
+S0422,E020,2026-06-19,Day,09:00,17:00,Warehouse 1,Production Line B
+S0423,E020,2026-06-20,Day,09:00,17:00,Main Plant,Production Line B
+S0424,E020,2026-06-21,Day,09:00,17:00,HQ,Production Line B
+S0425,E021,2026-06-01,Night,22:00,06:00,Site B,ICU
+S0426,E021,2026-06-04,Night,22:00,06:00,Site A,ICU
+S0427,E021,2026-06-05,Night,22:00,06:00,HQ,ICU
+S0428,E021,2026-06-06,Night,22:00,06:00,Main Plant,ICU
+S0429,E021,2026-06-08,Night,22:00,06:00,Warehouse 1,ICU
+S0430,E021,2026-06-11,Night,22:00,06:00,Site B,ICU
+S0431,E021,2026-06-12,Night,22:00,06:00,Site A,ICU
+S0432,E021,2026-06-13,Night,22:00,06:00,Main Plant,ICU
+S0433,E021,2026-06-14,Night,22:00,06:00,Main Plant,ICU
+S0434,E021,2026-06-15,Night,22:00,06:00,Main Plant,ICU
+S0435,E021,2026-06-18,Night,22:00,06:00,Site A,ICU
+S0436,E021,2026-06-19,Night,22:00,06:00,Warehouse 1,ICU
+S0437,E021,2026-06-20,Night,22:00,06:00,Site B,ICU
+S0438,E021,2026-06-21,Night,22:00,06:00,HQ,ICU
+S0439,E021,2026-06-22,Night,22:00,06:00,Site A,ICU
+S0440,E021,2026-06-25,Night,22:00,06:00,Site B,ICU
+S0441,E021,2026-06-26,Night,22:00,06:00,HQ,ICU
+S0442,E021,2026-06-27,Night,22:00,06:00,HQ,ICU
+S0443,E021,2026-06-28,Night,22:00,06:00,Site B,ICU
+S0444,E022,2026-06-01,Day,09:00,17:00,HQ,Support Desk
+S0445,E022,2026-06-03,Day,09:00,17:00,Site B,Support Desk
+S0446,E022,2026-06-06,Day,09:00,17:00,HQ,Support Desk
+S0447,E022,2026-06-07,Day,09:00,17:00,Site B,Support Desk
+S0448,E022,2026-06-08,Day,09:00,17:00,Site A,Support Desk
+S0449,E022,2026-06-09,Day,09:00,17:00,Main Plant,Support Desk
+S0450,E022,2026-06-10,Day,09:00,17:00,Site B,Support Desk
+S0451,E022,2026-06-13,Day,09:00,17:00,Site A,Support Desk
+S0452,E022,2026-06-14,Day,09:00,17:00,Site A,Support Desk
+S0453,E022,2026-06-15,Day,09:00,17:00,Warehouse 1,Support Desk
+S0454,E022,2026-06-16,Day,09:00,17:00,Site A,Support Desk
+S0455,E022,2026-06-17,Day,09:00,17:00,Main Plant,Support Desk
+S0456,E022,2026-06-20,Day,09:00,17:00,Site A,Support Desk
+S0457,E022,2026-06-21,Day,09:00,17:00,Site B,Support Desk
+S0458,E022,2026-06-22,Day,09:00,17:00,Site A,Support Desk
+S0459,E022,2026-06-23,Day,09:00,17:00,HQ,Support Desk
+S0460,E022,2026-06-24,Day,09:00,17:00,Site A,Support Desk
+S0461,E022,2026-06-27,Day,09:00,17:00,Warehouse 1,Support Desk
+S0462,E022,2026-06-28,Day,09:00,17:00,Warehouse 1,Support Desk
+S0463,E023,2026-06-01,Morning,06:00,14:00,Warehouse 1,Support Desk
+S0464,E023,2026-06-02,Morning,06:00,14:00,Site A,Support Desk
+S0465,E023,2026-06-05,Morning,06:00,14:00,Site B,Support Desk
+S0466,E023,2026-06-06,Morning,06:00,14:00,Main Plant,Support Desk
+S0467,E023,2026-06-07,Morning,06:00,14:00,HQ,Support Desk
+S0468,E023,2026-06-08,Morning,06:00,14:00,Main Plant,Support Desk
+S0469,E023,2026-06-09,Morning,06:00,14:00,HQ,Support Desk
+S0470,E023,2026-06-12,Morning,06:00,14:00,Warehouse 1,Support Desk
+S0471,E023,2026-06-13,Morning,06:00,14:00,Warehouse 1,Support Desk
+S0472,E023,2026-06-14,Morning,06:00,14:00,Site A,Support Desk
+S0473,E023,2026-06-15,Morning,06:00,14:00,HQ,Support Desk
+S0474,E023,2026-06-16,Morning,06:00,14:00,Site B,Support Desk
+S0475,E023,2026-06-19,Morning,06:00,14:00,Site B,Support Desk
+S0476,E023,2026-06-20,Morning,06:00,14:00,Warehouse 1,Support Desk
+S0477,E023,2026-06-21,Morning,06:00,14:00,Site A,Support Desk
+S0478,E023,2026-06-22,Morning,06:00,14:00,Main Plant,Support Desk
+S0479,E023,2026-06-23,Morning,06:00,14:00,Main Plant,Support Desk
+S0480,E023,2026-06-26,Morning,06:00,14:00,Warehouse 1,Support Desk
+S0481,E023,2026-06-27,Morning,06:00,14:00,Site A,Support Desk
+S0482,E023,2026-06-28,Morning,06:00,14:00,Site A,Support Desk
+S0483,E024,2026-06-02,Evening,14:00,22:00,Site A,Facility Security
+S0484,E024,2026-06-03,Evening,14:00,22:00,HQ,Facility Security
+S0485,E024,2026-06-04,Evening,14:00,22:00,Site A,Facility Security
+S0486,E024,2026-06-05,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0487,E024,2026-06-06,Evening,14:00,22:00,Site A,Facility Security
+S0488,E024,2026-06-09,Evening,14:00,22:00,HQ,Facility Security
+S0489,E024,2026-06-10,Evening,14:00,22:00,Site A,Facility Security
+S0490,E024,2026-06-11,Evening,14:00,22:00,Site B,Facility Security
+S0491,E024,2026-06-12,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0492,E024,2026-06-13,Evening,14:00,22:00,Site A,Facility Security
+S0493,E024,2026-06-16,Evening,14:00,22:00,HQ,Facility Security
+S0494,E024,2026-06-17,Evening,14:00,22:00,Main Plant,Facility Security
+S0495,E024,2026-06-18,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0496,E024,2026-06-19,Evening,14:00,22:00,HQ,Facility Security
+S0497,E024,2026-06-20,Evening,14:00,22:00,HQ,Facility Security
+S0498,E024,2026-06-24,Evening,14:00,22:00,Main Plant,Facility Security
+S0499,E024,2026-06-26,Evening,14:00,22:00,Main Plant,Facility Security
+S0500,E024,2026-06-27,Evening,14:00,22:00,Main Plant,Facility Security
+S0501,E025,2026-06-01,Morning,06:00,14:00,HQ,General Ward
+S0502,E025,2026-06-02,Morning,06:00,14:00,Site A,General Ward
+S0503,E025,2026-06-03,Morning,06:00,14:00,Site A,General Ward
+S0504,E025,2026-06-04,Morning,06:00,14:00,HQ,General Ward
+S0505,E025,2026-06-07,Morning,06:00,14:00,Warehouse 1,General Ward
+S0506,E025,2026-06-08,Morning,06:00,14:00,Site B,General Ward
+S0507,E025,2026-06-09,Morning,06:00,14:00,Main Plant,General Ward
+S0508,E025,2026-06-10,Morning,06:00,14:00,HQ,General Ward
+S0509,E025,2026-06-11,Morning,06:00,14:00,Site A,General Ward
+S0510,E025,2026-06-14,Morning,06:00,14:00,HQ,General Ward
+S0511,E025,2026-06-15,Morning,06:00,14:00,Site A,General Ward
+S0512,E025,2026-06-16,Morning,06:00,14:00,Warehouse 1,General Ward
+S0513,E025,2026-06-17,Morning,06:00,14:00,Warehouse 1,General Ward
+S0514,E025,2026-06-18,Morning,06:00,14:00,Site B,General Ward
+S0515,E025,2026-06-21,Morning,06:00,14:00,Site A,General Ward
+S0516,E025,2026-06-22,Morning,06:00,14:00,Site A,General Ward
+S0517,E025,2026-06-23,Morning,06:00,14:00,HQ,General Ward
+S0518,E025,2026-06-24,Morning,06:00,14:00,Main Plant,General Ward
+S0519,E025,2026-06-25,Morning,06:00,14:00,Warehouse 1,General Ward
+S0520,E025,2026-06-28,Morning,06:00,14:00,Site A,General Ward
+S0521,E025,2026-06-13,Day,07:00,19:00,Site A,General Ward
+S0522,E025,2026-06-14,Day,07:00,19:00,Site B,General Ward
+S0523,E025,2026-06-15,Day,07:00,19:00,Main Plant,General Ward
+S0524,E025,2026-06-16,Day,07:00,19:00,Site B,General Ward
+S0525,E025,2026-06-17,Day,07:00,19:00,Site B,General Ward
+S0526,E025,2026-06-18,Day,07:00,19:00,Main Plant,General Ward
+S0527,E026,2026-06-01,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0528,E026,2026-06-02,Evening,14:00,22:00,Site B,Production Line A
+S0529,E026,2026-06-03,Evening,14:00,22:00,HQ,Production Line A
+S0530,E026,2026-06-06,Evening,14:00,22:00,HQ,Production Line A
+S0531,E026,2026-06-07,Evening,14:00,22:00,Main Plant,Production Line A
+S0532,E026,2026-06-08,Evening,14:00,22:00,Site A,Production Line A
+S0533,E026,2026-06-09,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0534,E026,2026-06-10,Evening,14:00,22:00,Main Plant,Production Line A
+S0535,E026,2026-06-13,Evening,14:00,22:00,HQ,Production Line A
+S0536,E026,2026-06-14,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0537,E026,2026-06-15,Evening,14:00,22:00,Warehouse 1,Production Line A
+S0538,E026,2026-06-17,Evening,14:00,22:00,HQ,Production Line A
+S0539,E026,2026-06-20,Evening,14:00,22:00,Main Plant,Production Line A
+S0540,E026,2026-06-21,Evening,14:00,22:00,Site A,Production Line A
+S0541,E026,2026-06-22,Evening,14:00,22:00,HQ,Production Line A
+S0542,E026,2026-06-23,Evening,14:00,22:00,Site A,Production Line A
+S0543,E026,2026-06-24,Evening,14:00,22:00,Main Plant,Production Line A
+S0544,E026,2026-06-27,Evening,14:00,22:00,Site B,Production Line A
+S0545,E026,2026-06-28,Evening,14:00,22:00,Site B,Production Line A
+S0546,E027,2026-06-01,Morning,06:00,14:00,HQ,ICU
+S0547,E027,2026-06-04,Morning,06:00,14:00,Main Plant,ICU
+S0548,E027,2026-06-05,Morning,06:00,14:00,Site B,ICU
+S0549,E027,2026-06-06,Morning,06:00,14:00,Site B,ICU
+S0550,E027,2026-06-07,Morning,06:00,14:00,Site B,ICU
+S0551,E027,2026-06-08,Morning,06:00,14:00,Site A,ICU
+S0552,E027,2026-06-11,Morning,06:00,14:00,Warehouse 1,ICU
+S0553,E027,2026-06-12,Morning,06:00,14:00,HQ,ICU
+S0554,E027,2026-06-13,Morning,06:00,14:00,Warehouse 1,ICU
+S0555,E027,2026-06-14,Morning,06:00,14:00,HQ,ICU
+S0556,E027,2026-06-15,Morning,06:00,14:00,HQ,ICU
+S0557,E027,2026-06-18,Morning,06:00,14:00,Main Plant,ICU
+S0558,E027,2026-06-19,Morning,06:00,14:00,Site A,ICU
+S0559,E027,2026-06-20,Morning,06:00,14:00,Main Plant,ICU
+S0560,E027,2026-06-21,Morning,06:00,14:00,HQ,ICU
+S0561,E027,2026-06-25,Morning,06:00,14:00,Main Plant,ICU
+S0562,E027,2026-06-26,Morning,06:00,14:00,Site A,ICU
+S0563,E027,2026-06-28,Morning,06:00,14:00,Site A,ICU
+S0564,E028,2026-06-01,Morning,06:00,14:00,Warehouse 1,Production Line B
+S0565,E028,2026-06-04,Morning,06:00,14:00,HQ,Production Line B
+S0566,E028,2026-06-05,Morning,06:00,14:00,Site A,Production Line B
+S0567,E028,2026-06-06,Morning,06:00,14:00,HQ,Production Line B
+S0568,E028,2026-06-07,Morning,06:00,14:00,Main Plant,Production Line B
+S0569,E028,2026-06-08,Morning,06:00,14:00,HQ,Production Line B
+S0570,E028,2026-06-11,Morning,06:00,14:00,Site A,Production Line B
+S0571,E028,2026-06-12,Morning,06:00,14:00,Main Plant,Production Line B
+S0572,E028,2026-06-13,Morning,06:00,14:00,Site A,Production Line B
+S0573,E028,2026-06-14,Morning,06:00,14:00,Site B,Production Line B
+S0574,E028,2026-06-18,Morning,06:00,14:00,Warehouse 1,Production Line B
+S0575,E028,2026-06-19,Morning,06:00,14:00,HQ,Production Line B
+S0576,E028,2026-06-20,Morning,06:00,14:00,Main Plant,Production Line B
+S0577,E028,2026-06-21,Morning,06:00,14:00,Warehouse 1,Production Line B
+S0578,E028,2026-06-22,Morning,06:00,14:00,Main Plant,Production Line B
+S0579,E028,2026-06-25,Morning,06:00,14:00,Site A,Production Line B
+S0580,E028,2026-06-26,Morning,06:00,14:00,Main Plant,Production Line B
+S0581,E028,2026-06-27,Morning,06:00,14:00,Site A,Production Line B
+S0582,E028,2026-06-28,Morning,06:00,14:00,Warehouse 1,Production Line B
+S0583,E029,2026-06-01,Evening,14:00,22:00,HQ,General Ward
+S0584,E029,2026-06-02,Evening,14:00,22:00,Main Plant,General Ward
+S0585,E029,2026-06-03,Evening,14:00,22:00,Site B,General Ward
+S0586,E029,2026-06-06,Evening,14:00,22:00,Main Plant,General Ward
+S0587,E029,2026-06-07,Evening,14:00,22:00,Warehouse 1,General Ward
+S0588,E029,2026-06-08,Evening,14:00,22:00,Site A,General Ward
+S0589,E029,2026-06-09,Evening,14:00,22:00,Warehouse 1,General Ward
+S0590,E029,2026-06-10,Evening,14:00,22:00,Main Plant,General Ward
+S0591,E029,2026-06-13,Evening,14:00,22:00,HQ,General Ward
+S0592,E029,2026-06-14,Evening,14:00,22:00,Warehouse 1,General Ward
+S0593,E029,2026-06-15,Evening,14:00,22:00,Site A,General Ward
+S0594,E029,2026-06-16,Evening,14:00,22:00,Site B,General Ward
+S0595,E029,2026-06-17,Evening,14:00,22:00,Main Plant,General Ward
+S0596,E029,2026-06-20,Evening,14:00,22:00,Warehouse 1,General Ward
+S0597,E029,2026-06-21,Evening,14:00,22:00,Site B,General Ward
+S0598,E029,2026-06-22,Evening,14:00,22:00,Main Plant,General Ward
+S0599,E029,2026-06-23,Evening,14:00,22:00,Site A,General Ward
+S0600,E029,2026-06-24,Evening,14:00,22:00,HQ,General Ward
+S0601,E029,2026-06-27,Evening,14:00,22:00,HQ,General Ward
+S0602,E030,2026-06-02,Evening,14:00,22:00,HQ,Facility Security
+S0603,E030,2026-06-03,Evening,14:00,22:00,Site B,Facility Security
+S0604,E030,2026-06-04,Evening,14:00,22:00,HQ,Facility Security
+S0605,E030,2026-06-05,Evening,14:00,22:00,Site B,Facility Security
+S0606,E030,2026-06-06,Evening,14:00,22:00,Site A,Facility Security
+S0607,E030,2026-06-09,Evening,14:00,22:00,Site B,Facility Security
+S0608,E030,2026-06-10,Evening,14:00,22:00,HQ,Facility Security
+S0609,E030,2026-06-11,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0610,E030,2026-06-12,Evening,14:00,22:00,Site B,Facility Security
+S0611,E030,2026-06-13,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0612,E030,2026-06-16,Evening,14:00,22:00,Site B,Facility Security
+S0613,E030,2026-06-17,Evening,14:00,22:00,HQ,Facility Security
+S0614,E030,2026-06-18,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0615,E030,2026-06-19,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0616,E030,2026-06-20,Evening,14:00,22:00,Warehouse 1,Facility Security
+S0617,E030,2026-06-23,Evening,14:00,22:00,Site B,Facility Security
+S0618,E030,2026-06-24,Evening,14:00,22:00,Site B,Facility Security
+S0619,E030,2026-06-25,Evening,14:00,22:00,Site A,Facility Security
+S0620,E030,2026-06-26,Evening,14:00,22:00,Main Plant,Facility Security
+S0621,E030,2026-06-27,Evening,14:00,22:00,Site A,Facility Security
+S0622,E031,2026-06-01,Morning,06:00,14:00,Site B,ICU
+S0623,E031,2026-06-02,Morning,06:00,14:00,HQ,ICU
+S0624,E031,2026-06-03,Morning,06:00,14:00,Warehouse 1,ICU
+S0625,E031,2026-06-06,Morning,06:00,14:00,Site B,ICU
+S0626,E031,2026-06-07,Morning,06:00,14:00,Main Plant,ICU
+S0627,E031,2026-06-08,Morning,06:00,14:00,Warehouse 1,ICU
+S0628,E031,2026-06-10,Morning,06:00,14:00,Site B,ICU
+S0629,E031,2026-06-13,Morning,06:00,14:00,Site A,ICU
+S0630,E031,2026-06-14,Morning,06:00,14:00,Site A,ICU
+S0631,E031,2026-06-15,Morning,06:00,14:00,Site A,ICU
+S0632,E031,2026-06-16,Morning,06:00,14:00,Main Plant,ICU
+S0633,E031,2026-06-17,Morning,06:00,14:00,Site B,ICU
+S0634,E031,2026-06-21,Morning,06:00,14:00,Warehouse 1,ICU
+S0635,E031,2026-06-22,Morning,06:00,14:00,Site B,ICU
+S0636,E031,2026-06-23,Morning,06:00,14:00,Warehouse 1,ICU
+S0637,E031,2026-06-24,Morning,06:00,14:00,Site A,ICU
+S0638,E031,2026-06-27,Morning,06:00,14:00,Site A,ICU
+S0639,E031,2026-06-28,Morning,06:00,14:00,Site B,ICU
+S0640,E032,2026-06-01,Night,22:00,06:00,Site B,General Ward
+S0641,E032,2026-06-02,Night,22:00,06:00,Site A,General Ward
+S0642,E032,2026-06-03,Night,22:00,06:00,HQ,General Ward
+S0643,E032,2026-06-04,Night,22:00,06:00,Site A,General Ward
+S0644,E032,2026-06-05,Night,22:00,06:00,Warehouse 1,General Ward
+S0645,E032,2026-06-08,Night,22:00,06:00,Site A,General Ward
+S0646,E032,2026-06-09,Night,22:00,06:00,HQ,General Ward
+S0647,E032,2026-06-10,Night,22:00,06:00,Site B,General Ward
+S0648,E032,2026-06-11,Night,22:00,06:00,Site A,General Ward
+S0649,E032,2026-06-12,Night,22:00,06:00,Site B,General Ward
+S0650,E032,2026-06-15,Night,22:00,06:00,Site B,General Ward
+S0651,E032,2026-06-16,Night,22:00,06:00,Site A,General Ward
+S0652,E032,2026-06-17,Night,22:00,06:00,Main Plant,General Ward
+S0653,E032,2026-06-18,Night,22:00,06:00,HQ,General Ward
+S0654,E032,2026-06-19,Night,22:00,06:00,HQ,General Ward
+S0655,E032,2026-06-22,Night,22:00,06:00,Warehouse 1,General Ward
+S0656,E032,2026-06-23,Night,22:00,06:00,Site A,General Ward
+S0657,E032,2026-06-24,Night,22:00,06:00,Main Plant,General Ward
+S0658,E032,2026-06-25,Night,22:00,06:00,Site A,General Ward
+S0659,E032,2026-06-26,Night,22:00,06:00,Site A,General Ward
+S0660,E033,2026-06-01,Evening,14:00,22:00,Site A,ICU
+S0661,E033,2026-06-02,Evening,14:00,22:00,Main Plant,ICU
+S0662,E033,2026-06-03,Evening,14:00,22:00,Main Plant,ICU
+S0663,E033,2026-06-04,Evening,14:00,22:00,Site B,ICU
+S0664,E033,2026-06-07,Evening,14:00,22:00,Warehouse 1,ICU
+S0665,E033,2026-06-08,Evening,14:00,22:00,Warehouse 1,ICU
+S0666,E033,2026-06-09,Evening,14:00,22:00,Site B,ICU
+S0667,E033,2026-06-10,Evening,14:00,22:00,Warehouse 1,ICU
+S0668,E033,2026-06-14,Evening,14:00,22:00,Site B,ICU
+S0669,E033,2026-06-15,Evening,14:00,22:00,Main Plant,ICU
+S0670,E033,2026-06-16,Evening,14:00,22:00,HQ,ICU
+S0671,E033,2026-06-17,Evening,14:00,22:00,HQ,ICU
+S0672,E033,2026-06-18,Evening,14:00,22:00,Site A,ICU
+S0673,E033,2026-06-21,Evening,14:00,22:00,Site B,ICU
+S0674,E033,2026-06-22,Evening,14:00,22:00,Site A,ICU
+S0675,E033,2026-06-23,Evening,14:00,22:00,Main Plant,ICU
+S0676,E033,2026-06-24,Evening,14:00,22:00,Main Plant,ICU
+S0677,E033,2026-06-25,Evening,14:00,22:00,Warehouse 1,ICU
+S0678,E033,2026-06-28,Evening,14:00,22:00,Warehouse 1,ICU
+S0679,E034,2026-06-01,Evening,14:00,22:00,Warehouse 1,Logistics
+S0680,E034,2026-06-02,Evening,14:00,22:00,HQ,Logistics
+S0681,E034,2026-06-03,Evening,14:00,22:00,Site A,Logistics
+S0682,E034,2026-06-04,Evening,14:00,22:00,Site A,Logistics
+S0683,E034,2026-06-07,Evening,14:00,22:00,Site B,Logistics
+S0684,E034,2026-06-08,Evening,14:00,22:00,Main Plant,Logistics
+S0685,E034,2026-06-09,Evening,14:00,22:00,Main Plant,Logistics
+S0686,E034,2026-06-10,Evening,14:00,22:00,Main Plant,Logistics
+S0687,E034,2026-06-11,Evening,14:00,22:00,Warehouse 1,Logistics
+S0688,E034,2026-06-14,Evening,14:00,22:00,Warehouse 1,Logistics
+S0689,E034,2026-06-15,Evening,14:00,22:00,Site A,Logistics
+S0690,E034,2026-06-16,Evening,14:00,22:00,Main Plant,Logistics
+S0691,E034,2026-06-17,Evening,14:00,22:00,Warehouse 1,Logistics
+S0692,E034,2026-06-18,Evening,14:00,22:00,Site A,Logistics
+S0693,E034,2026-06-21,Evening,14:00,22:00,Warehouse 1,Logistics
+S0694,E034,2026-06-22,Evening,14:00,22:00,Site B,Logistics
+S0695,E034,2026-06-23,Evening,14:00,22:00,Site B,Logistics
+S0696,E034,2026-06-24,Evening,14:00,22:00,Warehouse 1,Logistics
+S0697,E034,2026-06-28,Evening,14:00,22:00,Main Plant,Logistics
+S0698,E035,2026-06-01,Evening,14:00,22:00,Site A,General Ward
+S0699,E035,2026-06-02,Evening,14:00,22:00,Warehouse 1,General Ward
+S0700,E035,2026-06-05,Evening,14:00,22:00,Main Plant,General Ward
+S0701,E035,2026-06-06,Evening,14:00,22:00,Site A,General Ward
+S0702,E035,2026-06-07,Evening,14:00,22:00,HQ,General Ward
+S0703,E035,2026-06-08,Evening,14:00,22:00,Main Plant,General Ward
+S0704,E035,2026-06-09,Evening,14:00,22:00,Site B,General Ward
+S0705,E035,2026-06-12,Evening,14:00,22:00,Site A,General Ward
+S0706,E035,2026-06-13,Evening,14:00,22:00,Warehouse 1,General Ward
+S0707,E035,2026-06-14,Evening,14:00,22:00,HQ,General Ward
+S0708,E035,2026-06-15,Evening,14:00,22:00,Main Plant,General Ward
+S0709,E035,2026-06-16,Evening,14:00,22:00,Site B,General Ward
+S0710,E035,2026-06-19,Evening,14:00,22:00,Main Plant,General Ward
+S0711,E035,2026-06-20,Evening,14:00,22:00,Warehouse 1,General Ward
+S0712,E035,2026-06-21,Evening,14:00,22:00,Site B,General Ward
+S0713,E035,2026-06-22,Evening,14:00,22:00,Warehouse 1,General Ward
+S0714,E035,2026-06-23,Evening,14:00,22:00,Warehouse 1,General Ward
+S0715,E035,2026-06-26,Evening,14:00,22:00,Main Plant,General Ward
+S0716,E035,2026-06-27,Evening,14:00,22:00,Site A,General Ward
+S0717,E035,2026-06-28,Evening,14:00,22:00,Main Plant,General Ward
+S0718,E036,2026-06-02,Evening,14:00,22:00,Site B,Production Line B
+S0719,E036,2026-06-03,Evening,14:00,22:00,HQ,Production Line B
+S0720,E036,2026-06-04,Evening,14:00,22:00,Site B,Production Line B
+S0721,E036,2026-06-05,Evening,14:00,22:00,Site B,Production Line B
+S0722,E036,2026-06-06,Evening,14:00,22:00,Site A,Production Line B
+S0723,E036,2026-06-09,Evening,14:00,22:00,HQ,Production Line B
+S0724,E036,2026-06-10,Evening,14:00,22:00,HQ,Production Line B
+S0725,E036,2026-06-11,Evening,14:00,22:00,Site A,Production Line B
+S0726,E036,2026-06-12,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0727,E036,2026-06-13,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0728,E036,2026-06-16,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0729,E036,2026-06-17,Evening,14:00,22:00,Site A,Production Line B
+S0730,E036,2026-06-18,Evening,14:00,22:00,Main Plant,Production Line B
+S0731,E036,2026-06-19,Evening,14:00,22:00,Warehouse 1,Production Line B
+S0732,E036,2026-06-20,Evening,14:00,22:00,HQ,Production Line B
+S0733,E036,2026-06-23,Evening,14:00,22:00,HQ,Production Line B
+S0734,E036,2026-06-24,Evening,14:00,22:00,Site B,Production Line B
+S0735,E036,2026-06-25,Evening,14:00,22:00,Site B,Production Line B
+S0736,E036,2026-06-26,Evening,14:00,22:00,Site A,Production Line B
+S0737,E036,2026-06-27,Evening,14:00,22:00,HQ,Production Line B
+S0738,E037,2026-06-01,Day,09:00,17:00,Main Plant,Production Line A
+S0739,E037,2026-06-02,Day,09:00,17:00,Site B,Production Line A
+S0740,E037,2026-06-03,Day,09:00,17:00,HQ,Production Line A
+S0741,E037,2026-06-06,Day,09:00,17:00,Site A,Production Line A
+S0742,E037,2026-06-07,Day,09:00,17:00,HQ,Production Line A
+S0743,E037,2026-06-08,Day,09:00,17:00,Main Plant,Production Line A
+S0744,E037,2026-06-09,Day,09:00,17:00,Site A,Production Line A
+S0745,E037,2026-06-10,Day,09:00,17:00,Site B,Production Line A
+S0746,E037,2026-06-13,Day,09:00,17:00,HQ,Production Line A
+S0747,E037,2026-06-14,Day,09:00,17:00,HQ,Production Line A
+S0748,E037,2026-06-15,Day,09:00,17:00,HQ,Production Line A
+S0749,E037,2026-06-16,Day,09:00,17:00,HQ,Production Line A
+S0750,E037,2026-06-20,Day,09:00,17:00,Site A,Production Line A
+S0751,E037,2026-06-22,Day,09:00,17:00,HQ,Production Line A
+S0752,E037,2026-06-23,Day,09:00,17:00,Site B,Production Line A
+S0753,E037,2026-06-24,Day,09:00,17:00,Warehouse 1,Production Line A
+S0754,E037,2026-06-27,Day,09:00,17:00,Site A,Production Line A
+S0755,E037,2026-06-28,Day,09:00,17:00,HQ,Production Line A
+S0756,E038,2026-06-03,Evening,14:00,22:00,Warehouse 1,General Ward
+S0757,E038,2026-06-04,Evening,14:00,22:00,Warehouse 1,General Ward
+S0758,E038,2026-06-05,Evening,14:00,22:00,Site A,General Ward
+S0759,E038,2026-06-06,Evening,14:00,22:00,Site B,General Ward
+S0760,E038,2026-06-07,Evening,14:00,22:00,Warehouse 1,General Ward
+S0761,E038,2026-06-10,Evening,14:00,22:00,Main Plant,General Ward
+S0762,E038,2026-06-11,Evening,14:00,22:00,Main Plant,General Ward
+S0763,E038,2026-06-12,Evening,14:00,22:00,Main Plant,General Ward
+S0764,E038,2026-06-13,Evening,14:00,22:00,Main Plant,General Ward
+S0765,E038,2026-06-14,Evening,14:00,22:00,Site B,General Ward
+S0766,E038,2026-06-17,Evening,14:00,22:00,HQ,General Ward
+S0767,E038,2026-06-18,Evening,14:00,22:00,Main Plant,General Ward
+S0768,E038,2026-06-19,Evening,14:00,22:00,Site A,General Ward
+S0769,E038,2026-06-20,Evening,14:00,22:00,Site B,General Ward
+S0770,E038,2026-06-21,Evening,14:00,22:00,Site A,General Ward
+S0771,E038,2026-06-24,Evening,14:00,22:00,Warehouse 1,General Ward
+S0772,E038,2026-06-25,Evening,14:00,22:00,Warehouse 1,General Ward
+S0773,E038,2026-06-26,Evening,14:00,22:00,Site B,General Ward
+S0774,E038,2026-06-27,Evening,14:00,22:00,HQ,General Ward
+S0775,E038,2026-06-28,Evening,14:00,22:00,Site B,General Ward
+S0776,E039,2026-06-01,Day,09:00,17:00,Warehouse 1,Facility Security
+S0777,E039,2026-06-02,Day,09:00,17:00,Main Plant,Facility Security
+S0778,E039,2026-06-05,Day,09:00,17:00,Site A,Facility Security
+S0779,E039,2026-06-06,Day,09:00,17:00,HQ,Facility Security
+S0780,E039,2026-06-07,Day,09:00,17:00,Site B,Facility Security
+S0781,E039,2026-06-08,Day,09:00,17:00,Main Plant,Facility Security
+S0782,E039,2026-06-12,Day,09:00,17:00,HQ,Facility Security
+S0783,E039,2026-06-13,Day,09:00,17:00,Warehouse 1,Facility Security
+S0784,E039,2026-06-14,Day,09:00,17:00,Site A,Facility Security
+S0785,E039,2026-06-15,Day,09:00,17:00,Warehouse 1,Facility Security
+S0786,E039,2026-06-16,Day,09:00,17:00,Main Plant,Facility Security
+S0787,E039,2026-06-19,Day,09:00,17:00,Warehouse 1,Facility Security
+S0788,E039,2026-06-20,Day,09:00,17:00,Warehouse 1,Facility Security
+S0789,E039,2026-06-22,Day,09:00,17:00,Main Plant,Facility Security
+S0790,E039,2026-06-23,Day,09:00,17:00,Site A,Facility Security
+S0791,E039,2026-06-26,Day,09:00,17:00,Warehouse 1,Facility Security
+S0792,E039,2026-06-27,Day,09:00,17:00,Main Plant,Facility Security
+S0793,E039,2026-06-28,Day,09:00,17:00,HQ,Facility Security
+S0794,E040,2026-06-01,Morning,06:00,14:00,Warehouse 1,Facility Security
+S0795,E040,2026-06-02,Morning,06:00,14:00,Main Plant,Facility Security
+S0796,E040,2026-06-03,Morning,06:00,14:00,Main Plant,Facility Security
+S0797,E040,2026-06-04,Morning,06:00,14:00,Site B,Facility Security
+S0798,E040,2026-06-07,Morning,06:00,14:00,Warehouse 1,Facility Security
+S0799,E040,2026-06-08,Morning,06:00,14:00,Site A,Facility Security
+S0800,E040,2026-06-10,Morning,06:00,14:00,Warehouse 1,Facility Security
+S0801,E040,2026-06-11,Morning,06:00,14:00,Site B,Facility Security
+S0802,E040,2026-06-14,Morning,06:00,14:00,HQ,Facility Security
+S0803,E040,2026-06-15,Morning,06:00,14:00,HQ,Facility Security
+S0804,E040,2026-06-16,Morning,06:00,14:00,Warehouse 1,Facility Security
+S0805,E040,2026-06-17,Morning,06:00,14:00,Main Plant,Facility Security
+S0806,E040,2026-06-18,Morning,06:00,14:00,HQ,Facility Security
+S0807,E040,2026-06-21,Morning,06:00,14:00,HQ,Facility Security
+S0808,E040,2026-06-22,Morning,06:00,14:00,HQ,Facility Security
+S0809,E040,2026-06-23,Morning,06:00,14:00,Site A,Facility Security
+S0810,E040,2026-06-24,Morning,06:00,14:00,Site A,Facility Security
+S0811,E040,2026-06-25,Morning,06:00,14:00,HQ,Facility Security
+S0812,E040,2026-06-28,Morning,06:00,14:00,Site A,Facility Security
+S0813,E002,2026-06-04,Evening,14:00,22:00,Site A,Logistics
+S0814,E002,2026-06-04,Night,20:00,23:59,Site B,Logistics

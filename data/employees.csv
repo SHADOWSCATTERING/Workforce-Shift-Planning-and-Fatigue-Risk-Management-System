@@ -1,0 +1,41 @@
+employee_id,name,role,department,employment_type,max_weekly_hours,contracted_hours,experience_years,min_rest_hours_required
+E001,Priya Sharma,Customer Support Agent,Production Line A,Full-Time,48,48,2.5,11
+E002,Diya Malhotra,Nurse,Logistics,Full-Time,48,48,0.9,11
+E003,Pooja Kumar,Warehouse Associate,Logistics,Full-Time,48,48,3.4,11
+E004,Rajesh Das,Technician,Production Line B,Full-Time,48,48,12.2,11
+E005,Aarav Singh,Customer Support Agent,Production Line B,Full-Time,48,48,2.8,11
+E006,Zoya Rao,Nurse,Production Line B,Full-Time,48,48,12.8,11
+E007,Sunita Reddy,Supervisor,ICU,Part-Time,24,30,2.3,11
+E008,Nikhil Gupta,Warehouse Associate,Production Line A,Part-Time,24,30,13.3,11
+E009,Ira Bhat,Technician,Support Desk,Full-Time,48,48,10.1,11
+E010,Arjun Gupta,Supervisor,General Ward,Part-Time,24,24,4.5,11
+E011,Ira Singh,Machine Operator,Production Line A,Full-Time,48,48,4.4,11
+E012,Kabir Menon,Customer Support Agent,General Ward,Full-Time,48,48,4.0,11
+E013,Anika Chauhan,Machine Operator,Support Desk,Full-Time,48,48,3.7,11
+E014,Sara Verma,Technician,Facility Security,Full-Time,48,48,5.1,11
+E015,Tara Gupta,Technician,Logistics,Part-Time,24,24,3.6,11
+E016,Tanvi Chauhan,Customer Support Agent,Production Line B,Full-Time,48,48,2.5,11
+E017,Divya Malhotra,Machine Operator,Support Desk,Full-Time,48,48,13.5,11
+E018,Simran Joshi,Technician,General Ward,Full-Time,48,48,1.8,11
+E019,Ishaan Rao,Technician,Support Desk,Full-Time,48,48,10.4,11
+E020,Sunita Gupta,Security Guard,Production Line B,Full-Time,48,48,7.3,11
+E021,Sanya Malhotra,Supervisor,ICU,Full-Time,48,48,2.2,11
+E022,Rajesh Reddy,Supervisor,Support Desk,Full-Time,48,48,4.8,11
+E023,Rohan Bose,Nurse,Support Desk,Part-Time,24,24,14.6,11
+E024,Karan Kapoor,Nurse,Facility Security,Full-Time,48,48,12.7,11
+E025,Suresh Menon,Technician,General Ward,Full-Time,48,48,2.8,11
+E026,Lakshmi Sharma,Warehouse Associate,Production Line A,Full-Time,48,48,2.1,11
+E027,Ira Nair,Technician,ICU,Full-Time,48,48,8.7,11
+E028,Ananya Gupta,Customer Support Agent,Production Line B,Part-Time,24,30,11.6,11
+E029,Riya Pillai,Warehouse Associate,General Ward,Full-Time,48,48,13.2,11
+E030,Kavya Patel,Warehouse Associate,Facility Security,Part-Time,24,20,10.8,11
+E031,Rahul Kapoor,Security Guard,ICU,Full-Time,48,48,1.4,11
+E032,Vivaan Bhat,Warehouse Associate,General Ward,Full-Time,48,48,0.6,11
+E033,Ishaan Kumar,Nurse,ICU,Part-Time,24,20,8.0,11
+E034,Tara Pillai,Technician,Logistics,Full-Time,48,48,14.1,11
+E035,Amit Bhat,Security Guard,General Ward,Part-Time,24,24,3.3,11
+E036,Diya Das,Machine Operator,Production Line B,Full-Time,48,48,13.0,11
+E037,Ishaan Chauhan,Customer Support Agent,Production Line A,Part-Time,24,20,4.1,11
+E038,Neha Malhotra,Security Guard,General Ward,Full-Time,48,48,4.5,11
+E039,Vikram Gupta,Security Guard,Facility Security,Part-Time,24,30,1.9,11
+E040,Rajesh Sharma,Nurse,Facility Security,Part-Time,24,20,6.4,11
